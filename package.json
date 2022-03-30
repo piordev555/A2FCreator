@@ -20,7 +20,8 @@
     "test": "npx hardhat test",
     "compile": "npx hardhat compile",
     "deploy:kovan": "npx hardhat --network kovan deploy",
-    "deploy:rinkeby": "npx hardhat --network rinkeby deploy"
+    "deploy:rinkeby": "npx hardhat --network rinkeby deploy",
+    "build-contracts": "sol-merger \"./contracts/*.sol\" ./build"
   },
   "author": "",
   "license": "ISC",
@@ -30,7 +31,8 @@
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.4.7",
-    "hardhat": "2.6.5"
+    "hardhat": "2.6.5",
+    "sol-merger": "^4.0.0"
   },
   "eslintConfig": {
     "extends": [
